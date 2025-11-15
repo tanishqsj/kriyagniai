@@ -1,0 +1,18 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.vue';
+import WorkflowHero from '../components/WorkflowHero.vue';
+import WorkflowSteps from '../components/WorkflowSteps.vue';
+import WorkflowBenefits from '../components/WorkflowBenefits.vue';
+import Footer from '../components/Footer.vue';
+---
+
+<Layout title="AI Workflows - Kriyagni AI">
+  <Header client:only="vue" />
+  <main>
+    <WorkflowHero client:load />
+    <WorkflowSteps client:visible />
+    <WorkflowBenefits client:visible />
+  </main>
+  <Footer client:load />
+</Layout>

@@ -1,0 +1,24 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.vue';
+import Footer from '../components/Footer.vue';
+import Statistics from '../components/Statistics.vue';
+import CompanyValues from '../components/CompanyValues.vue';
+import ContactForm from '../components/ContactForm.vue';
+---
+
+<Layout title="About Kriyagni AI">
+  <Header client:load />
+  <main>
+    <section class="py-16 md:py-24 text-center">
+      <div class="container mx-auto px-4">
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6 text-white">Empowering Decisions with AI Solutions</h1>
+        <p class="text-xl md:text-2xl text-white max-w-3xl mx-auto">Kriyagni AI transforms complex challenges into clear, actionable strategies, enabling teams to execute with confidence and efficiency through tailored AI systems and prompt solutions.</p>
+      </div>
+    </section>
+    <Statistics client:load />
+    <CompanyValues client:load />
+    <ContactForm client:load />
+  </main>
+  <Footer client:load />
+</Layout>

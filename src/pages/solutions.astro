@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.vue';
+import SolutionsHero from '../components/SolutionsHero.vue';
+import SolutionsGrid from '../components/SolutionsGrid.vue';
+import ProductsGrid from '../components/ProductsGrid.vue';
+import Testimonials from '../components/Testimonials.vue';
+import Footer from '../components/Footer.vue';
+---
+
+<Layout title="Smart Solutions - Kriyagni AI">
+  <Header client:only="vue" />
+  <main>
+    <SolutionsHero client:load />
+    <ProductsGrid client:load />
+    <SolutionsGrid client:load />
+    <Testimonials client:visible />
+  </main>
+  <Footer client:load />
+</Layout>

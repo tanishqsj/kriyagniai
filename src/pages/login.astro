@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.vue';
+import Footer from '../components/Footer.vue';
+import LoginForm from '../components/LoginForm.vue';
+---
+
+<Layout title="Kriyagni AI - Login">
+  <Header client:load />
+  <main class="flex items-center justify-center min-h-screen bg-white py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-md w-full">
+      <LoginForm client:load />
+      <div class="text-center text-sm mt-4">
+        Don't have an account? <a href="/signup" class="font-medium text-gray-600 hover:text-gray-900">Sign up</a>
+      </div>
+    </div>
+  </main>
+  <Footer client:load />
+</Layout>

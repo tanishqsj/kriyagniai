@@ -1,0 +1,30 @@
+{
+  "name": "kriyagni",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/tailwind": "^6.0.2",
+    "@astrojs/vercel": "^8.2.8",
+    "@astrojs/vue": "^5.1.1",
+    "@types/three": "^0.180.0",
+    "@vueuse/core": "^13.9.0",
+    "aos": "^2.3.4",
+    "astro": "^5.13.8",
+    "motion": "^12.23.16",
+    "nodemailer": "^7.0.6",
+    "sharp": "^0.34.4",
+    "three": "^0.180.0",
+    "vue": "^3.5.21"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.0.24"
+  }
+}
